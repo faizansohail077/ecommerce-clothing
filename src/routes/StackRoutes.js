@@ -8,11 +8,11 @@ const Stack = createNativeStackNavigator();
 const StackRoutes = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="signup" component={Signup} />
-            <Stack.Screen name="login" component={Login} />
-            <Stack.Screen name="forgotPassword" component={ForgotPassword} />
+            <Stack.Screen options={{ headerTitle: '' }} name="signup" component={Signup} />
+            <Stack.Screen options={{ headerTitle: '' }} name="login" component={Login} />
+            <Stack.Screen options={{ headerTitle: '' }} name="forgotPassword" component={ForgotPassword} />
         </Stack.Navigator>
     )
 }
 
-export default StackRoutes
+export default StackRoutes 
